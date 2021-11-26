@@ -1,0 +1,660 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: helvetica;
+    
+}
+
+
+.parallax{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/img_servicios/medicina.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    
+    
+}
+.parallax:before{
+    content: "";
+    width: 100%;
+    height: 80vh;
+    background-color: #024961;
+    opacity: 0.3;
+    position: absolute;
+   
+    
+}
+
+.parallax_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    
+}
+
+.titulo_portada{ 
+    width: 50%; 
+    z-index: 2;
+    margin-bottom: 10px;  
+}
+.titulo_portada h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 2px 2px rgba(43, 42, 42, 0.945);
+    line-height: 1.2em;
+
+}
+
+.subtitulo_portada{
+    width: 40%; 
+    z-index: 1;
+    
+    
+}
+.subtitulo_portada p{
+    font-size: 24px;
+    font-family: helvetica;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 3px 2px 2px rgba(43, 42, 42, 0.945);
+
+}
+.btn_portada{
+    z-index: 1;
+    
+}
+
+.call_to_action{
+    width: 200px;
+    height: 55px;
+    background-color: #024961;
+    border-radius: 50px;
+    border: none;
+    color: #D8B394;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+    
+    
+}
+.call_to_action:hover{
+    background-color: #2d2b2a;
+    color: #fff;
+    transition: .5s;
+
+}
+::selection {
+    background: #D8B394;
+    color: #fff;
+}
+
+
+/*++++++++++++++++++++++++++contenido++++++++++++++*/
+
+.contenedor_general{
+    width: 70%;
+    margin: 50px auto;
+}
+.contenedor_servicio{
+    margin-bottom: 70px;
+}
+
+.descripcion_servicio{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+}
+.descripcion_servicio p{
+    text-align: justify;
+    margin-top: 30px;
+}
+.text_servicio{
+    width: 50%;
+}
+.img_servicio{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    padding-top: 70px;
+}
+.img_servicio img{
+    width: 450px;
+    height: 320px;
+    border-radius: 10px;
+    
+}
+.planes{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap:20px
+    
+}
+.box1, .box2, .box3{
+    width: 280px;
+    height: 460px;
+    border: solid 1px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 1px 10px  rgb(0, 0, 0, 0.2);
+    cursor: default;
+    background-color: #dda869;
+}
+.box1{
+    background: #D8B394;
+}
+.box1:hover, .box2:hover{
+    box-shadow: 5px 5px 20px  rgb(0, 0, 0, 0.3);
+    transform: translateY(-2%);
+    transition: .8s;
+    cursor: default;
+}
+
+.box1 h4, .box2 h4{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.box1 p, .box2 p{
+    font-size: 14px;
+    color: #2d2b2a;
+}
+
+.box1 h5, .box2 h5{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.btn_service{
+    width: 120px;
+    height: 45px;
+    background-color: #2d2b2a;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    
+
+}
+.btn_service:hover{
+    background-color: #024961;
+    transition: .5s;
+    
+}
+/*++++++++++++++++++++++++++++servicio2++++++++++++++++++++++++++++++*/
+.area_box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*++++++++++++++++++++++++++++servicio3++++++++++++++++++++++++++++++*/
+.planes3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    
+}
+
+
+@media (max-width: 810px){
+    .parallax{
+        width: 100%;
+        height: 40vh; 
+        background-attachment:initial;   
+    }
+    .parallax:before{
+        height: 40vh;      
+    }
+    .titulo_portada{
+        width: 50%;
+    }
+    .titulo_portada h2{
+        font-size: 45px;
+    
+    }
+    
+    .subtitulo_portada{
+        width: 40%;
+        font-size: 20px;         
+    }
+    .contenedor_general{
+        width: 90%;
+    }
+    .descripcion_servicio{
+        flex-direction: column;
+    }
+    
+    .descripcion_servicio p{
+        text-align: justify;
+        margin-top: 30px;
+    }
+    .text_servicio{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .img_servicio{
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+    .img_servicio img{
+        width: 500px;
+        height: 380px;
+        
+    }
+    .box1, .box2, .box3{
+        width: 250px;
+    }
+    .area_box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .planes3{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 15px;
+    }
+   
+        
+    }
+    
+@media (max-width:414px){
+    .titulo_portada{
+        width: 100%;
+    }
+    .titulo_portada h2{
+        font-size: 35px;
+    
+    }
+    .subtitulo_portada p{
+        font-size: 18px;
+    }
+    .call_to_action{
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+        margin-top: 10px;
+        
+        
+    }
+    .contenedor_general{
+        width: 95%;
+    } 
+    .contenedor_servicio{
+        padding: 20px;
+    }
+    .descripcion_servicio{
+        width: 100%;
+        
+    }
+    .img_servicio{
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+    }
+    .img_servicio img{
+        width: 380px;
+        height: 280px;
+        
+    }
+    .planes{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .area_box{
+        margin-bottom: -80px;
+    }
+    .planes3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************Sección de contacto**********************************************************/
+.contact{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #D8B593;
+    font-family: helvetica;
+    margin-bottom: 1px;
+   
+}
+
+.div_ad{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.ad{
+    width: 85%;
+    height: 400px;
+    padding-top: 40px;
+    border: solid 3px white;  
+     
+}
+.ad .p1{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.ad .p2{
+    text-transform: uppercase;
+    color: #024961;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+.ad .p3{
+    color: white;
+    margin-bottom: 60px;
+    font-size: 16px;
+    text-align: center;
+}
+.ad .p4{
+    text-transform: uppercase;
+    color: #024961;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.ad i{
+    color: #024961;
+    font-size: 24px;
+  
+}
+.ad .p5{
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*formulario de contacto*/
+
+
+.contact_form{
+    padding: 30px 50px;
+    font-size: 14px;
+    color: #024961; 
+    
+}
+
+.contact_form p{
+    font-size: 16px;
+    color: #024961;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+
+.contact_form input, .contact_form select, .contact_form textarea{
+    width: 100%;
+    font-size: 16px;
+    padding-left: 60px;
+    height: 30px;
+    margin-bottom: 40px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #024961;
+    margin-bottom: 2px;
+    color: #024961;
+    text-align: left;
+  }
+.contact_form .msg{
+    height: 50px;
+
+}
+#checkbox{
+    width: 30px;
+    height: 15px;
+
+}
+.checkbox a{
+    font-size: 14px;
+    color: #024961;
+}
+.checkbox a:hover{
+    color: #fff;
+}
+
+
+.contact_form label{
+    text-align: left;
+    font-size: 16px;
+    color: #024961;
+}
+.btn_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ .btn_formulario{
+      width: 120px;
+      height: 50px;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 30px;
+      background-color: #024961;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      border: none;
+      
+
+  }
+
+  .btn_formulario:hover{
+    background-color: #2D2B2A;
+    color: white;
+    transition: 1s;
+
+  }
+
+.maps iframe{
+    width: 100%;
+    height: 500px;}
+   
+
+   
+/*/////////////////Responsive formulario de contacto vista tablet////////////////////*/
+
+@media  (max-width: 810px) {
+    .contact{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    .contact_form input, .contact_form select{
+        width: 100%;
+    }
+
+    .maps{
+        width: 100%;
+        
+    }
+
+    .maps iframe{
+        position: absolute;
+        height: 300px;
+    }
+    
+}
+
+ /*/////////////////////////////////////////////Responsive formulario de contacto vista smartphone/////////////////////////////////////*/
+
+ @media (max-width:414px){
+     .contact{
+         grid-template-columns: 1fr;
+         height: 1050px;
+         padding-top: 20px;
+         
+     }
+     .div_.ad{
+        padding-top: 20px;
+        height: 400px;
+     }
+     
+    .ad .p1{
+        font-size: 14px;
+    }
+    .ad .p2{
+        font-size: 18px;
+    }
+    .ad .p3{
+        font-size: 14px;
+    }
+    .ad .p4{
+        font-size: 18px;
+    }
+    .ad .p5{
+        font-size: 18px;
+    }
+
+
+ /*Formulario*/
+
+ .contact_form{
+     padding: 30px;
+     font-size: 16px;
+ }
+
+ .btn button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+}
+ /*BOTONES FLOTANTES*/
+ #btn-mas{
+    display: none;
+}
+.flotante2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: rgb( 2 , 73 , 97);
+    color: rgb( 216 , 179 , 148);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color:  rgb( 2 , 73 , 97);
+}
+.redes a{
+    font-size: 30px;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    color:  rgb( 216 , 179 , 148);
+    font-size: 20px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 40px;
+}
+
+
+
+
+  
+
